@@ -1,1 +1,82 @@
 /* Main CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+#wrapper { width: 100%;   }
+.inner { width: 960px; margin: 0 auto; }
+#intro {  margin: 0px auto; padding: 60px 0 20px; height: 650px;background: url('../assets/images/carpenter-148448_1280.png') no-repeat 280px 0 #8FBFE0; text-align: center; }
+
+#intro p { font-style: italic; color: #333; padding: 15px 0;}
+
+#intro h1 { font-size: 72px; font-family: 'Josefin Slab', serif; font-weight: 700; text-align: center; margin-top: 30px; color:#333; }
+#intro h2 {  font-family: 'Open Sans', Arial, sans-serif; font-weight: 700; font-size: 36px; text-align: center;}
+
+#about { margin: 0px auto; height: 350px; background-color: #6E75A8; color:#fff; }
+.title h1, #about-content h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; font-weight:700; }
+#about .inner { padding-top: 30px;}
+.title { width: 250px; float: left;  font-weight:700;  margin-right: 10px; font-family: 'Open Sans', Arial, sans-serif; }
+#about .title h1 { padding-bottom: 15px; text-align: center;}
+.title img { border: 10px solid #fff; }
+#about-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
+#about-content p { margin: 10px 0; line-height: 25px;}
+#work-history { margin: 0px auto; height: 540px; background-color: #ddd; }
+#work-history .title h1 { text-transform: uppercase; font-weight: 700; margin-top: 20px; }
+#work-history .title h3 { font-weight:300; margin: 10px 0; }
+#work-history .title a { text-decoration: none; }
+#work-history p { margin: 10px 0; line-height: 25px;}
+#work-history p.loc { margin-top:0px; }
+#work-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; padding: 20px 0; }
+#work-content h3 { font-weight: 700; font-size: 20px; }
+#work-content .job { margin-bottom: 25px;}
+
+#skills { margin: 0px auto; height: 650px; }
+#skills-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; padding: 20px 0; }
