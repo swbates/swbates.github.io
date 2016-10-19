@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color:#dddddd;
+	
 }
 ol, ul {
 	list-style: none;
@@ -51,8 +51,32 @@ table {
 
 
 
-#wrapper { width: 960px; margin: 0 auto;  }
-#wrapper h1 { font-size: 50px; font-family: 'Josefin Slab', serif; font-weight: 700; text-align: center; }
+#wrapper { width: 100%;   }
+.inner { width: 960px; margin: 0 auto; }
+#intro {  margin: 0px auto; padding: 60px 0 20px; height: 650px;background: url('../assets/images/carpenter-148448_1280.png') no-repeat 280px 0 #8FBFE0; text-align: center; }
 
+#intro p { font-style: italic; color: #333; padding: 15px 0;}
 
+#intro h1 { font-size: 72px; font-family: 'Josefin Slab', serif; font-weight: 700; text-align: center; margin-top: 30px; color:#333; }
+#intro h2 {  font-family: 'Open Sans', Arial, sans-serif; font-weight: 700; font-size: 36px; text-align: center;}
 
+#about { margin: 0px auto; height: 350px; background-color: #6E75A8; color:#fff; }
+.title h1, #about-content h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; font-weight:700; }
+#about .inner { padding-top: 30px;}
+.title { width: 250px; float: left;  font-weight:700;  margin-right: 10px; font-family: 'Open Sans', Arial, sans-serif; }
+#about .title h1 { padding-bottom: 15px; text-align: center;}
+.title img { border: 10px solid #fff; }
+#about-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
+#about-content p { margin: 10px 0; line-height: 25px;}
+#work-history { margin: 0px auto; height: 540px; background-color: #ddd; }
+#work-history .title h1 { text-transform: uppercase; font-weight: 700; margin-top: 20px; }
+#work-history .title h3 { font-weight:300; margin: 10px 0; }
+#work-history .title a { text-decoration: none; }
+#work-history p { margin: 10px 0; line-height: 25px;}
+#work-history p.loc { margin-top:0px; }
+#work-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; padding: 20px 0; }
+#work-content h3 { font-weight: 700; font-size: 20px; }
+#work-content .job { margin-bottom: 25px;}
+
+#skills { margin: 0px auto; height: 650px; }
+#skills-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; padding: 20px 0; }
