@@ -8,8 +8,60 @@
 <link rel="stylesheet" href="css/main.css" />
 <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,700|Open+Sans:300,400,700" rel="stylesheet">
     
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!--JS-->
+ <script language="text/javascript">
+    (function() {
+  $(".skillbars").each(function(idNr) {
+    var color = $(this).attr('data-color'),
+      percent = $(this).attr('data-pr'),
+      caption = $(this).attr('data-cap'),
+      heightBar = $(this).attr('data-height'),
+      widthBar = $(this).attr('data-width'),
+      skillLevel = "";
+    if (!heightBar) {
+      heightBar = "5px";
+    }
+    if (!widthBar) {
+      widthBar = "400px";
+    }
+    getPerAsNum = percent.split("%");
+    if (getPerAsNum[0] == 25 || getPerAsNum[0] < 25) {
+      skillLevel = "Beginner";
+    }
+    if (getPerAsNum[0] == 50 || getPerAsNum[0] == 75 || getPerAsNum[0] > 50 && getPerAsNum[0] < 75) {
+      skillLevel = "Avarage";
+    }
+    if (getPerAsNum[0] == 100 || getPerAsNum[0] > 75) {
+      skillLevel = "Professional";
+    }
 
+    var skillHtml = "<div class='skillbar'>" +
+      "<h1 style='display: none; margin-bottom: .2em;'>" + caption + "</h1>" +
+      "<div class='skillbg' style='display: none; width: " + widthBar + "; height: " + heightBar + "; background-color: #BFBFBF;'>" +
+      "<div class='skill-skill-" + idNr + "' style='background-color: " + color + "; height: " + heightBar + ";' />" +
+      "</div>" +
+      "<p style='display: none; margin-bottom: 1em;'>" + percent + " / " + skillLevel + "</p>" +
+      "</div>";
+    setTimeout(function() {
+      $(".skill-skill-" + idNr).css({
+        width: '0px'
+      });
+      $(".skillbar h1").fadeIn(500, function() {
+        $(".skillbg").fadeIn(500, function() {
+          $(".skillbar p").fadeIn(500, function() {
+            $("div.skill-skill-" + idNr).animate({
+              width: percent
+            }, 1500);
+          });
+        });
+      });
+    }, 100);
+    $(this).prepend(skillHtml);
+  });
+})();
+ </script>   
+</script>
 </head>
 <body>
 <section id="wrapper">
@@ -23,7 +75,7 @@
     </section>
     
     <section id="about">
-        <article class="inner">
+        <article class="inner group">
             <div class="title">
                 <h1>ABOUT ME</h1>
                 <img src="assets/images/steve.jpg" />
@@ -40,7 +92,7 @@
     </section>
     
     <section id="work-history">
-        <article class="inner">
+        <article class="inner group">
             <div class="title">
                 <h1>Professional Experience</h1>
                 <h3><a href="" title="Resume">Download CV</a></h3>
@@ -83,64 +135,80 @@
     </section>
     
     <section id="skills">
-        <article class="inner">
+        <article class="inner group">
             <div class="title">
                 <h1>SKILLS</h1>
             </div>
             <div id="skills-content">
-                <h1>Front End:</h1>
-                <ul>
-                    <li><span class="bar html5"></span><h3>HTML5</h3></li>
-                    <li>CSS3 &amp; LESS</li>
-                    <li>JavaScript(JSON, Ajax, jQuery)</li>
-                    <li>Responsive/Adaptive Development</li>
-                    <li>XML</li>
-                    <li>Twitter Bootstrap</li>
-                </ul>
+                
+
+                <div class="skill-block">
+                    
+
+                    <h1>Front End:</h1>
+                    <div class="col-xs-12 col-sm-12 col-md-12" style="height: auto;">
+                          <span class="skillbars" data-color="#34495E" data-pr="24%" data-cap="Skill 1" data-height="10px"></span>
+                          <span class="skillbars" data-color="#049372" data-pr="53%" data-cap="Skill 2" data-height="10px"></span>
+                          <span class="skillbars" data-color="#D35400" data-pr="90%" data-cap="Skill 3" data-height="10px"></span>
+                        </div>
+                    <!-- <ul>
+                        <li><h3>HTML5</h3></li>
+                        <li>CSS3 &amp; LESS</li>
+                        <li></li>
+                        <li>Responsive/Adaptive Development</li>
+                        <li>XML</li>
+                        <li>Twitter Bootstrap</li>
+                    </ul> -->
+                </div>  
                 
                 
                 
+                <div class="skill-block">
+                    <h1>Back End:</h1>
+                    
+                    <ul>
+                        <li>ColdFusion</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
                 
-                <h1>Back End:</h1>
+                <div class="skill-block">
+                    <h1>Project Management:</h1>
+                    
+                    <ul>
+                        <li>Agile Methodologies</li>
+                        <li>JIRA</li>
+                        <li>Rally</li>
+                        <li>Pivotal</li>
+                    </ul>
+                </div>
                 
-                <ul>
-                    <li>ColdFusion</li>
-                    <li>MySQL</li>
-                </ul>
-                
-                
-                <h1>Project Management:</h1>
-                
-                <ul>
-                    <li>Agile Methodologies</li>
-                    <li>JIRA</li>
-                    <li>Rally</li>
-                    <li>Pivotal</li>
-                </ul>
-                
-                
-                <h1>Software:</h1>
-                <ul>
-                    <li>Drupal</li>
-                    <li>Wordpress</li>
-                    <li>Adobe Creative Cloud</li>
-                    <li>Sublime Text 2</li>
-                    <li>Adobe Brackets</li>
-                </ul>
-                
-                <h1>Tools:</h1>
-                <ul>
-                    <li>Git/GitHub</li>
-                    <li>Grunt</li>
-                    <li>Node.js</li>
-                </ul>
+                <div class="skill-block">
+                    <h1>Software:</h1>
+                    <ul>
+                        <li>Drupal</li>
+                        <li>Wordpress</li>
+                        <li>Adobe Creative Cloud</li>
+                        <li>Sublime Text 2</li>
+                        <li>Adobe Brackets</li>
+                    </ul>
+                </div>
+
+                <div class="skill-block">
+                    <h1>Tools:</h1>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>Grunt</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>  
             
             </div>
         
         </article>
     </section>
     <section id="education">
-        <article id="inner">
+        <article class="inner group">
             <div class="title">
                 <h1>EDUCATION</h1>
             </div>
@@ -154,14 +222,16 @@
             </div>
         </article>
     </section>
+<!-- 
     <section id="work">
         <article class="inner">
         
         
         </article>
-    </section>
+    </section> -->
+    
     <section id="social-contact">
-        <article class="inner">
+        <article class="inner group">
             <div class="title">
                 <h1>Contact Me</h1>
                 
