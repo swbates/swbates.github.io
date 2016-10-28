@@ -24,6 +24,14 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+/* force an element to clear it's children */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -31,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	
+	background-color: #C0BCB5;
 }
 ol, ul {
 	list-style: none;
@@ -49,70 +57,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
-#wrapper { width: 100%;   }
-.inner { width: 960px; margin: 0 auto; }
-#intro {  margin: 0px auto; padding: 60px 0 20px; height: 650px;background: url('../assets/images/carpenter-148448_1280.png') no-repeat 280px 0 #8FBFE0; text-align: center; }
-
-#intro p { font-style: italic; color: #333; padding: 15px 0;}
-
-#intro h1 { font-size: 72px; font-family: 'Josefin Slab', serif; font-weight: 700; text-align: center; margin-top: 30px; color:#333; }
-#intro h2 {  font-family: 'Open Sans', Arial, sans-serif; font-weight: 700; font-size: 36px; text-align: center;}
-
-
-#about { margin: 0px auto; height: 350px; background-color: #6E75A8; color:#fff; }
-.title h1, #about-content h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; font-weight:700; }
-#about .inner { padding-top: 30px;}
-.title { width: 250px; float: left;  font-weight:700;  margin-right: 10px; font-family: 'Open Sans', Arial, sans-serif; }
-#about .title h1 { padding-bottom: 15px; text-align: center;}
-.title img { border: 10px solid #fff; }
-#about-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
-#about-content p { margin: 10px 0; line-height: 25px;}
-
-#work-history { margin: 0px auto; height: 540px; background-color: #ddd; }
-#work-history .title h1 { text-transform: uppercase; font-weight: 700; margin-top: 20px; }
-#work-history .title h3 { font-weight:300; margin: 10px 0; }
-#work-history .title a { text-decoration: none; }
-#work-history p { margin: 10px 0; line-height: 25px;}
-#work-history p.loc { margin-top:0px; }
-#work-content { width: 540px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; padding: 20px 0; }
-#work-content h3 { font-weight: 700; font-size: 20px; }
-#work-content .job { margin-bottom: 25px;}
-
-#skills { margin: 0px auto; height: 750px; }
-#skills-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; padding: 20px 0; }
-
-#skills-content ul { list-style-type: disc; margin-left: 25px; }
-.skill-block { margin-bottom: 20px; }
-.skill-block h1 { margin-bottom: 15px; font-weight: 700; }
-.skill-block ul li { margin: 10px 0; }
-
-#education-content, #social-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
-
-#education { margin: 0px auto; height: 540px; background-color: #ddd; }
-.skill-skill {
-  min-width: 1px;
-  max-width: 100%;
-  width: 0;
-}
-
-.skillbar {
-  width: auto;
-  float: left;
-  margin-right: 1em;
-  color: white;
-}
-
-.skillbar h1 {
-  font-size: 20px;
-  text-align: left;
-}
-
-.skillbar p {
-  text-align: left;
-}
-
 .group:after {
   content: "";
   display: table;
@@ -120,11 +64,217 @@ table {
 }
 
 
+#wrapper { width: 100%;   }
+.inner { width: 960px; margin: 0 auto; }
+#intro {  margin: 0px auto; padding: 60px 0 20px; height: 350px; background: url('../assets/images/carpenter-148448_1280.png') no-repeat 280px 0 #C0BCB5; text-align: center; }
+
+#intro p { font-style: italic; color: #333; padding: 15px 0;}
+
+#intro h1 { font-size: 72px; font-family: 'Open Sans', serif; font-weight: 800; text-align: center; margin-top: 30px; color:#333; }
+#intro h2 {  font-family: 'Open Sans', Arial, sans-serif; font-weight: 700; font-size: 36px; text-align: center;}
+
+
+#about { margin: 0px auto; height: 530px; background-color: #84A9C0; color:#fff; }
+.title h1, #about-content h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; font-weight: 700; }
+#about .inner { padding-top: 30px; }
+.title { width: 250px; float: left;font-weight:300;  margin-right: 10px; font-family: 'Open Sans', Arial, sans-serif; }
+#about .title h1 { padding-bottom: 15px; }
+#about .title { text-align: center; }
+#about .title a { text-decoration: none; color:#fff;}
+#about-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
+#about-content p { margin: 10px 0; line-height: 25px;}
+
+#work-history { margin: 0px auto; height: 400px; background-color: #FBF5F3; }
+#work-history .title h1 { text-transform: uppercase; font-weight: 700; margin-top: 20px; }
+#work-history .title h3 { font-weight:300; margin: 10px 0; }
+#work-history .title a { text-decoration: none; }
+#work-history .job { margin-bottom: 40px; }
+#work-history p {   line-height: 25px;}
+#work-history p.loc { margin-top:0px; }
+
+.learn-more { margin-top: 25px; }
+.learn-more a { background-color:#84A9C0; padding: 15px 25px; text-align:center; border-radius: 5px;  color:#fff; }
+.learn-more a:hover { opacity: .75; cursor:pointer;}
+#skills { margin: 0px auto; height: 350px; background-color:#2A2D34; color: #fff; padding: 20px 0; }
+.skills-content { width: 700px; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300;  float: left;  }
+
+.skills-content ul { list-style-type: disc; margin-left: 25px; }
+.skills-content h1 { font-weight: 600; margin-bottom: 20px; }
+.skill-block-full { width: 700px; margin: 0 0 20px 0; }
+.skill-block-half { width: 300px; margin: 0 30px 20px 0; float: left;}
+.skill-block h1 { margin-bottom: 15px; font-weight: 700; }
+.skill-block ul li { margin: 10px 0; }
 
 
 
+#progressbar{width:100%;height:15px;background-color:#eee;padding:2px;margin:.6em 0;clear:both}#progress{height:15px;width:0;max-width:100%;float:left;background-color:#3d9cd7}
+
+#html #progress{-webkit-animation:html 2s 1 forwards;-moz-animation:html 2s 1 forwards;-ms-animation:html 2s 1 forwards;animation:html 2s 1 forwards}#css #progress{-webkit-animation:css 2s 1 forwards;-moz-animation:css 2s 1 forwards;-ms-animation:css 2s 1 forwards;animation:css 2s 1 forwards}#js #progress{-webkit-animation:js 2s 1 forwards;-moz-animation:js 2s 1 forwards;-ms-animation:js 2s 1 forwards;animation:js 2s 1 forwards}#xml #progress{-webkit-animation:xml 2s 1 forwards;-moz-animation:xml 2s 1 forwards;-ms-animation:xml 2s 1 forwards;animation:xml 2s 1 forwards}#rwd #progress{-webkit-animation:rwd 2s 1 forwards;-moz-animation:rwd 2s 1 forwards;-ms-animation:rwd 2s 1 forwards;animation:rwd 2s 1 forwards}
+
+#git #progress{-webkit-animation:git 2s 1 forwards;-moz-animation:git 2s 1 forwards;-ms-animation:git 2s 1 forwards;animation:git 2s 1 forwards}
+#grunt #progress{-webkit-animation:grunt 2s 1 forwards;-moz-animation:grunt 2s 1 forwards;-ms-animation:grunt 2s 1 forwards;animation:grunt 2s 1 forwards}
+#cf #progress{-webkit-animation:cf 2s 1 forwards;-moz-animation:cf 2s 1 forwards;-ms-animation:cf 2s 1 forwards;animation:cf 2s 1 forwards}
+#sql #progress{-webkit-animation:sql 2s 1 forwards;-moz-animation:sql 2s 1 forwards;-ms-animation:sql 2s 1 forwards;animation:sql 2s 1 forwards}
+#agile #progress{-webkit-animation:agile 2s 1 forwards;-moz-animation:agile 2s 1 forwards;-ms-animation:agile 2s 1 forwards;animation:agile 2s 1 forwards}
+#drupal #progress{-webkit-animation:drupal 2s 1 forwards;-moz-animation:drupal 2s 1 forwards;-ms-animation:drupal 2s 1 forwards;animation:drupal 2s 1 forwards}
+#wp #progress{-webkit-animation:wp 2s 1 forwards;-moz-animation:wp 2s 1 forwards;-ms-animation:wp 2s 1 forwards;animation:wp 2s 1 forwards}
+#adobe #progress{-webkit-animation:adobe 2s 1 forwards;-moz-animation:adobe 2s 1 forwards;-ms-animation:adobe 2s 1 forwards;animation:adobe 2s 1 forwards}
+
+#pbaranim{height:15px;width:100%;overflow:hidden;-moz-opacity:.25;-khtml-opacity:.25;opacity:.25;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=25);filter:alpha(opacity=25)}
+
+/* HTML BAR */
+@-webkit-keyframes html { from { } to { width: 80% } }
+@-moz-keyframes html { from { } to { width: 80% } }
+@-ms-keyframes html { from { } to { width: 80% } }
+@keyframes html { from { } to { width: 80% } }
+
+/* CSS BAR */
+@-webkit-keyframes css { from { } to { width: 80% } }
+@-moz-keyframes css { from { } to { width: 80% } }
+@-ms-keyframes css { from { } to { width: 80% } }
+@keyframes css { from { } to { width: 80% } }
+
+/* JS BAR */
+@-webkit-keyframes js { from { } to { width: 50% } }
+@-moz-keyframes js { from { } to { width: 50% } }
+@-ms-keyframes js { from { } to { width: 50% } }
+@keyframes js { from { } to { width: 50% } }
+
+/* RWD BAR */
+@-webkit-keyframes rwd { from { } to { width: 75% } }
+@-moz-keyframes rwd { from { } to { width: 75% } }
+@-ms-keyframes rwd { from { } to { width: 75% } }
+@keyframes rwd { from { } to { width: 75% } }
+
+/* GIT BAR */
+@-webkit-keyframes git { from { } to { width: 55% } }
+@-moz-keyframes git { from { } to { width: 55% } }
+@-ms-keyframes git { from { } to { width: 55% } }
+@keyframes git { from { } to { width: 55% } }
+
+/*   GRUNT BAR     */
+@-webkit-keyframes grunt { from { } to { width: 45% } }
+@-moz-keyframes grunt { from { } to { width: 45% } }
+@-ms-keyframes grunt { from { } to { width: 45% } }
+@keyframes grunt { from { } to { width: 45% } }
+
+/*  COLDFUSION BAR    */
+@-webkit-keyframes cf { from { } to { width: 65% } }
+@-moz-keyframes cf { from { } to { width: 65% } }
+@-ms-keyframes cf { from { } to { width: 65% } }
+@keyframes cf { from { } to { width: 65% } }
+
+/*   MYSQL BAR      */
+@-webkit-keyframes sql { from { } to { width: 55% } }
+@-moz-keyframes sql { from { } to { width: 55% } }
+@-ms-keyframes sql { from { } to { width: 55% } }
+@keyframes sql { from { } to { width: 55% } }
+
+/*   AGILE BAR      */
+@-webkit-keyframes agile { from { } to { width: 55% } }
+@-moz-keyframes agile { from { } to { width: 55% } }
+@-ms-keyframes agile { from { } to { width: 55% } }
+@keyframes agile { from { } to { width: 55% } }
+
+/*   DRUPAL BAR      */
+@-webkit-keyframes drupal { from { } to { width: 45% } }
+@-moz-keyframes drupal { from { } to { width: 45% } }
+@-ms-keyframes drupal { from { } to { width: 45% } }
+@keyframes drupal { from { } to { width: 45% } }
+
+/*   WORDPRESS BAR      */
+@-webkit-keyframes wp { from { } to { width: 45% } }
+@-moz-keyframes wp { from { } to { width: 45% } }
+@-ms-keyframes wp { from { } to { width: 45% } }
+@keyframes wp { from { } to { width: 45% } }
+
+/*    ADOBE BAR     */
+@-webkit-keyframes adobe { from { } to { width: 75% } }
+@-moz-keyframes adobe { from { } to { width: 75% } }
+@-ms-keyframes adobe { from { } to { width: 75% } }
+@keyframes adobe { from { } to { width: 75% } }
 
 
+#education-content, #social-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
+#education { margin: 0px auto; height: 250px; background-color: #4C4B63; color: #fff; padding: 20px 0; }
+#education h3 { margin-bottom: 10px; font-weight:600;}
+
+#work {
+    height: 550px;
+    background-color:#FBF5F3;
+    padding: 20px 0;
+}
+#work-history .work-content { padding: 20px 0; }
+.work-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
+.work-content h3 { font-weight: 700; font-size: 20px; }
+.work-content .job { margin-bottom: 25px;}
+.work-content .job ul li { list-style-type: disc; margin-left: 25px;}
+.work-content a { text-decoration: none; }
+.work-content .thumb-list li { float: left; }
+.work-content .thumb-list li img { margin: 5px 5px 0 0; border: 1px solid #C0BCB5;}
+#social-contact {
+    height: 250px; 
+    margin: 20px 0;
+    background-color:#C0BCB5;
+}
+
+#social-contact a {
+	text-decoration: none;
+	font-weight: 600;
+	color:#333;
+}
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 15px;
+	border-radius: 5px;
+	background: #fff;
+}
+.modalDialog > div ul li { margin: 10px 0;}
+.modalDialog > div h3 { text-align: center; }
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
 
 
 
