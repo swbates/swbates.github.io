@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #C0BCB5;
+	background-color: #F0F7F4;
 }
 ol, ul {
 	list-style: none;
@@ -66,15 +66,15 @@ table {
 
 #wrapper { width: 100%;   }
 .inner { width: 960px; margin: 0 auto; }
-#intro {  margin: 0px auto; padding: 60px 0 20px; height: 350px; background: url('../assets/images/carpenter-148448_1280.png') no-repeat 280px 0 #C0BCB5; text-align: center; }
+#intro {  margin: 0px auto; padding: 60px 0 20px; height: 350px; background-color: #F0F7F4; text-align: center; }
 
 #intro p { font-style: italic; color: #333; padding: 15px 0;}
 
-#intro h1 { font-size: 72px; font-family: 'Open Sans', serif; font-weight: 800; text-align: center; margin-top: 30px; color:#333; }
+#intro h1 { font-size: 72px; font-family: 'Open Sans', serif; font-weight: 800; text-align: center; margin-top: 50px; color:#000; }
 #intro h2 {  font-family: 'Open Sans', Arial, sans-serif; font-weight: 700; font-size: 36px; text-align: center;}
 
 
-#about { margin: 0px auto; height: 530px; background-color: #84A9C0; color:#fff; }
+#about { margin: 0px auto; height: 530px; background-color: #8C8984; color:#fff; }
 .title h1, #about-content h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; font-weight: 700; }
 #about .inner { padding-top: 30px; }
 .title { width: 250px; float: left;font-weight:300;  margin-right: 10px; font-family: 'Open Sans', Arial, sans-serif; }
@@ -84,18 +84,18 @@ table {
 #about-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
 #about-content p { margin: 10px 0; line-height: 25px;}
 
-#work-history { margin: 0px auto; height: 400px; background-color: #FBF5F3; }
-#work-history .title h1 { text-transform: uppercase; font-weight: 700; margin-top: 20px; }
+#work-history { margin: 0px auto; height: 430px; background-color: #F0F7F4; padding:  }
+#work-history .title h1 { text-transform: uppercase; font-weight: 700; margin-top: 20px; color:#8C8984; }
 #work-history .title h3 { font-weight:300; margin: 10px 0; }
-#work-history .title a { text-decoration: none; }
+#work-history .title a { text-decoration: none; color:#8C8984;}
 #work-history .job { margin-bottom: 40px; }
-#work-history p {   line-height: 25px;}
+#work-history p {   line-height: 20px;}
 #work-history p.loc { margin-top:0px; }
 
-.learn-more { margin-top: 25px; }
-.learn-more a { background-color:#84A9C0; padding: 15px 25px; text-align:center; border-radius: 5px;  color:#fff; }
+.learn-more { margin-top: 35px; }
+.learn-more a { border: 4px solid #8C8984; padding: 15px 25px; text-align: center;  color:#8C8984; text-decoration: none; }
 .learn-more a:hover { opacity: .75; cursor:pointer;}
-#skills { margin: 0px auto; height: 350px; background-color:#2A2D34; color: #fff; padding: 20px 0; }
+#skills { margin: 0px auto; height: 350px; background-color:#8C8984; color: #fff; padding: 20px 0; }
 .skills-content { width: 700px; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300;  float: left;  }
 
 .skills-content ul { list-style-type: disc; margin-left: 25px; }
@@ -107,7 +107,7 @@ table {
 
 
 
-#progressbar{width:100%;height:15px;background-color:#eee;padding:2px;margin:.6em 0;clear:both}#progress{height:15px;width:0;max-width:100%;float:left;background-color:#3d9cd7}
+#progressbar{width:100%;height:15px;background-color:#eee;padding:2px;margin:.6em 0;clear:both}#progress{height:15px;width:0;max-width:100%;float:left;background-color:#66B3BA}
 
 #html #progress{-webkit-animation:html 2s 1 forwards;-moz-animation:html 2s 1 forwards;-ms-animation:html 2s 1 forwards;animation:html 2s 1 forwards}#css #progress{-webkit-animation:css 2s 1 forwards;-moz-animation:css 2s 1 forwards;-ms-animation:css 2s 1 forwards;animation:css 2s 1 forwards}#js #progress{-webkit-animation:js 2s 1 forwards;-moz-animation:js 2s 1 forwards;-ms-animation:js 2s 1 forwards;animation:js 2s 1 forwards}#xml #progress{-webkit-animation:xml 2s 1 forwards;-moz-animation:xml 2s 1 forwards;-ms-animation:xml 2s 1 forwards;animation:xml 2s 1 forwards}#rwd #progress{-webkit-animation:rwd 2s 1 forwards;-moz-animation:rwd 2s 1 forwards;-ms-animation:rwd 2s 1 forwards;animation:rwd 2s 1 forwards}
 
@@ -196,34 +196,25 @@ table {
 
 
 #education-content, #social-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
-#education { margin: 0px auto; height: 250px; background-color: #4C4B63; color: #fff; padding: 20px 0; }
-#education h3 { margin-bottom: 10px; font-weight:600;}
-
+#education { margin: 0px auto; height: 250px; background-color: #F0F7F4; color: #8C8984; padding: 20px 0; }
+#education h3 { margin-bottom: 10px; font-weight:600; color:#8C8984}
+#education .title h1 { color:#8C8984;}
 #work {
-    height: 550px;
-    background-color:#FBF5F3;
+    height: 570px;
+    background-color:#8C8984;
     padding: 20px 0;
 }
 #work-history .work-content { padding: 20px 0; }
 .work-content { width: 700px; float: left; font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; }
-.work-content h3 { font-weight: 700; font-size: 20px; }
+.work-content h3 { font-weight: 700; font-size: 24px; color: #8C8984; padding-bottom: 10px;  }
+#work .work-content h3 { font-weight: 700; font-size: 24px; color: #fff; padding-bottom: 10px;  }
 .work-content .job { margin-bottom: 25px;}
 .work-content .job ul li { list-style-type: disc; margin-left: 25px;}
-.work-content a { text-decoration: none; }
+#work a { text-decoration: none; color: #fff; }
+#work .work-content { color: #fff; }
 .work-content .thumb-list li { float: left; }
-.work-content .thumb-list li img { margin: 5px 5px 0 0; border: 1px solid #C0BCB5;}
-#social-contact {
-    height: 250px; 
-    margin: 20px 0;
-    background-color:#C0BCB5;
-}
-
-#social-contact a {
-	text-decoration: none;
-	font-weight: 600;
-	color:#333;
-}
-
+.work-content .thumb-list li img { margin: 5px 5px 0 0; border: 1px solid #C0BCB5; }
+#work .title h1 { color: #fff; }
 
 
 .modalDialog {
