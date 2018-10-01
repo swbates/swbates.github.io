@@ -186,7 +186,7 @@ progress, progress[role] {
 #contact { min-height:75vh; background-color: #fff; padding: 50px 0; text-align: center;}
 #contact h2 {  font-family: 'Roboto Slab', serif; font-weight: bold;}
 #contact h3 { font-size: 24px; font-family: 'Roboto Slab', serif;}
-footer { background-color:#333; background-image: url('../img/bfr.png'); height:25vh; color: #fff; font-family: 'Roboto Slab', serif; padding-top:20px;}
+footer { background-color:#333; background-image: url('../img/BFR.png'); height:25vh; color: #fff; font-family: 'Roboto Slab', serif; padding-top:20px;}
 #contact label { display: block; }
 #contact ol { padding-left:0px; }
 
