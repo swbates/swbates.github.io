@@ -1,0 +1,28 @@
+  .container-fluid { 
+  	max-width: 1170px; 
+
+  	@media all and (min-width: $laptop) { max-width: 1199px; }
+  	@media all and (min-width: $monitor){ max-width: 1399px; }
+
+  }
+
+  .row {  
+  	margin-bottom: 40px; 
+  	--bs-gutter-x:0; 
+  	width: 100%; 
+  }
+
+  main { 
+  	min-height: 1200px; 
+  	padding-top: 20%;
+
+  	@media all and (min-width:$mobile-up){
+  		padding-top: 85px;
+  	} 
+
+  }
+
+  @media all and (min-width: $tablet-up) {
+  	.col-md-6 { width: 47%; }
+  }
+

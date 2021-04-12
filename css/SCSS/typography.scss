@@ -1,0 +1,19 @@
+/********************************/
+/*			TYPOGRAPHY 			*/
+/********************************/
+$header-font: 'Noto Sans', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $header-font;
+}
+
+nav {
+	a {
+		font-family: $header-font;
+		color: $purple;
+		font-size: 18px;
+		:hover,:active { color: $orange; }
+
+	}
+}
