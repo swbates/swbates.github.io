@@ -255,21 +255,21 @@ main {
     margin-left: 10px;
   }
 }
-.navbar .navbar-light .navbar-toggler {
-  margin-left: 15px;
+.navbar.navbar-light .navbar-toggler {
+  margin-left: 15px !important;
 }
 @media all and (min-width: 600px) {
-  .navbar .navbar-light .navbar-toggler {
+  .navbar.navbar-light .navbar-toggler {
     margin-left: 0px;
   }
 }
 @media all and (min-width: 768px) {
-  .navbar .navbar-light .navbar-toggler {
+  .navbar.navbar-light .navbar-toggler {
     margin-left: 15px;
   }
 }
 @media all and (min-width: 992px) {
-  .navbar .navbar-light .navbar-toggler {
+  .navbar.navbar-light .navbar-toggler {
     margin-left: 0px;
   }
 }
