@@ -338,14 +338,6 @@
         </div>
       </div>
 
-
-      
-
-
-
-
-
-
     </section>
 
     <hr />
@@ -392,17 +384,20 @@
     });
 
     $(document).ready(function(){
-      $.ajax({
-        url: "js/blogContent.json",
-        dataType: "jsonp"
-      })
-
+    
 
         $.getJSON("js/blogContent.json", function(data){
-            console.log(data); // Prints: 14
+            //console.log(data); // Prints: 14
+
+            $.each(data, function() {
+              $.each(this, function(k, v) {
+                console.log(data.title);
+              });
+            });
         }).fail(function(){
             console.log("An error has occurred.");
         });
+
 
 
     });
