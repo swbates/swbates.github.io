@@ -63,6 +63,14 @@
 
   }
 
+  .back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+  }
+  
+
   .row {  
   	margin-bottom: 40px; 
   	--bs-gutter-x:0; 

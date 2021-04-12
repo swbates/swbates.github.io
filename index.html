@@ -257,7 +257,7 @@
           <div class="post-thumb" style="background: url('img/11.jpg');background-size:cover;background-repeat: no-repeat; background-position: 0 0;">
              <div class="post-date">
               <p class="date">5</p>
-              <p class="month">JUL</p>  
+              <p class="month">JUL</p>
             </div>
           </div>
 
@@ -293,6 +293,7 @@
   </main>
 
   <footer>
+    
     <section class="container-fluid">
       <div class="row">
         <div class="footer-section branding col-sm-12 col-md-12 col-lg-6">
@@ -341,7 +342,7 @@
           
         </div>
       </div>
-
+      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><img src="img/up.png" /></a>
     </section>
 
     <hr />
@@ -388,7 +389,9 @@
     });
 
     $(document).ready(function(){
-    
+        
+
+        // The original idea here was to loop through and dynamically output each blog
         $.getJSON("js/blogContent.json", function(data){
              // Prints: 14
             blog = JSON.stringify(data);
@@ -400,12 +403,27 @@
               
 
               $.each(this, function(k, v) {
-
-                 console.log(k[title], v);
+                console.log(k, v.title);
               });
             });
         }).fail(function(){
             console.log("An error has occurred.");
+        });
+
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+          } else {
+            $('#back-to-top').fadeOut();
+          }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 400);
+          return false;
         });
 
          
