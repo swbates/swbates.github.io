@@ -388,10 +388,11 @@
 
         $.getJSON("js/blogContent.json", function(data){
             console.log(data); // Prints: 14
-
+            blog = JSON.stringify(data);
+          
             $.each(data, function() {
               $.each(this, function(k, v) {
-                console.log(JSON.stringify(data));
+                console.log(blog);
               });
             });
         }).fail(function(){
