@@ -387,7 +387,7 @@
     
 
         $.getJSON("js/blogContent.json", function(data){
-            console.log(data); // Prints: 14
+              console.log(data[0].title); // Prints: 14
             blog = JSON.stringify(data);
           
             $.each(data, function() {
