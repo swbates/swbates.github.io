@@ -257,7 +257,7 @@
           <div class="post-thumb" style="background: url('img/11.jpg');background-size:cover;background-repeat: no-repeat; background-position: 0 0;">
              <div class="post-date">
               <p class="date">5</p>
-              <p class="month">JUL</p>
+              <p class="month">JUL</p>  
             </div>
           </div>
 
@@ -400,7 +400,8 @@
               
 
               $.each(this, function(k, v) {
-                console.log(k, v.title);
+
+                 console.log(k[title], v);
               });
             });
         }).fail(function(){
