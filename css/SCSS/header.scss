@@ -63,7 +63,7 @@
 				color: $purple; 
 				margin-right: 30px; 
 
-				&:hover, &:active, &:hover { color:$orange; } 
+				&::hover, &::active { color:$orange; } 
 			}
 
 		}
