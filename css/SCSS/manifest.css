@@ -18,6 +18,63 @@ nav a :hover, nav a :active {
   color: #f8595a;
 }
 
+/********************************/
+/*   LAYOUT & UTILITY STYLES    */
+/********************************/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
 .container-fluid {
   max-width: 1170px;
 }
@@ -78,7 +135,7 @@ main {
   }
 }
 .navbar .navbar-brand {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 @media all and (min-width: 992px) {
   .navbar .navbar-brand {
@@ -90,21 +147,21 @@ main {
     margin-left: 10px;
   }
 }
-.navbar .navbar-light .navbar-toggler {
-  margin-left: 15px;
+.navbar.navbar-light .navbar-toggler {
+  margin-left: 15px !important;
 }
 @media all and (min-width: 600px) {
-  .navbar .navbar-light .navbar-toggler {
+  .navbar.navbar-light .navbar-toggler {
     margin-left: 0px;
   }
 }
 @media all and (min-width: 768px) {
-  .navbar .navbar-light .navbar-toggler {
+  .navbar.navbar-light .navbar-toggler {
     margin-left: 15px;
   }
 }
 @media all and (min-width: 992px) {
-  .navbar .navbar-light .navbar-toggler {
+  .navbar.navbar-light .navbar-toggler {
     margin-left: 0px;
   }
 }
@@ -124,7 +181,7 @@ main {
 .navbar .phone-cta {
   text-align: center;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 8px;
   background: #f6795a;
   background: radial-gradient(circle, #f6795a 1%, #f85a5a 100%);
@@ -138,6 +195,7 @@ main {
 @media all and (min-width: 768px) {
   .navbar .phone-cta {
     margin-right: 15px;
+    padding: 10px 20px;
   }
 }
 @media all and (min-width: 992px) {

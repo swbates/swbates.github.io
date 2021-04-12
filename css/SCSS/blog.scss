@@ -19,7 +19,7 @@
   }
 
   @media all and (min-width: $tablet-landscape-up) {
-    max-width: 490px; 
+    max-width: 540px; 
     margin-left: 14px; 
     margin-right: 15px;
   }
@@ -66,8 +66,14 @@
   
   
   .post-content { 
-    padding: 40px; font-family: $body-font; 
+    padding: 20px; 
+    font-family: $body-font; 
     
+
+    @media all and (min-width: $tablet-up){
+      padding: 40px;
+    }
+
     .post-title { margin-top: 0px; margin-bottom: 20px; }
 
     .meta { 
