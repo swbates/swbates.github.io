@@ -56,14 +56,14 @@
 			padding-left: 20px; 
 			margin-top: 5px;
 
-			a { 
+			a.nav-link { 
 				font-size: 16px; 
 				font-weight: 900; 
 				text-decoration: none; 
 				color: $purple; 
 				margin-right: 30px; 
 
-				&::hover, &.active { color:$orange; } 
+				&::hover, &.active { color:$orange!important; } 
 			}
 
 		}
