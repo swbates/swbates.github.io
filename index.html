@@ -387,10 +387,11 @@
     
 
         $.getJSON("js/blogContent.json", function(data){
-              console.log(data[0].title); // Prints: 14
-            blog = JSON.stringify(data);
+          console.log(data[0].title); // Prints: 14
+          blog = JSON.stringify(data);
           
-            $.each(data, function() {
+            $.each(data, function(i) {
+              console.log(blog[i].title);
               $.each(this, function(k, v) {
                 console.log(blog.title);
               });
